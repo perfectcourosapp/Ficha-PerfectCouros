@@ -1,0 +1,6 @@
+PerfectCouros Android V36
+Projeto completo para GitHub Actions.
+O HTML corresponde ao arquivo mais recente fornecido (index (1).html).
+Extraia o ZIP e envie os arquivos e pastas para a raiz do repositório GitHub.
+Execute Actions > Gerar APK PerfectCouros > Run workflow.
+Aviso: não é possível garantir ausência de falsos positivos ou malware apenas por inspeção estática.

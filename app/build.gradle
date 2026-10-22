@@ -1,0 +1,16 @@
+apply plugin: 'com.android.application'
+android {
+    namespace "com.dmhrcompany.fichaperfectcouros"
+    compileSdk 35
+    defaultConfig {
+        applicationId "com.dmhrcompany.fichaperfectcouros"
+        minSdk 24
+        targetSdk 35
+        versionCode 36
+        versionName "36.0"
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core:1.13.1"
+}
