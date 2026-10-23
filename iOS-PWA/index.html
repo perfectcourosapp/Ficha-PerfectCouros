@@ -606,13 +606,6 @@ button,.bottomNav button{-webkit-user-select:none;user-select:none;touch-action:
 <meta name="theme-color" content="#ffffff">
 </head>
 <body><img id="fichaPrint" src="${u}" alt="Ficha PerfectCouros">
-<script id="pc-pwa-worker">
-if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-  window.addEventListener('load', function () {
-    navigator.serviceWorker.register('./sw.js').catch(function (err) { console.warn('PWA offline:', err); });
-  });
-}
-</script>
 </body>
 </html>`);
    w.document.close();
@@ -1022,6 +1015,13 @@ document.addEventListener("DOMContentLoaded",function(){
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
+</script>
+<script id="pc-pwa-worker">
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./sw.js').catch(function (err) { console.warn('PWA offline:', err); });
+  });
+}
 </script>
 </body>
 </html>
